@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Management</title>
+  <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+
+  <div class="event-container">
+    <h2 class="event-heading">Event 1</h2>
+    <div class="event-box">
+      <img src="./public/vijay.jpg" alt="Event Image" class="event-image">
+      <form>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone:</label>
+          <input type="tel" id="phone" name="phone" required>
+        </div>
+        <div class="form-group">
+          <label for="seats">Number of Seats:</label>
+          <select id="seats" name="seats" required>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <!-- Add more options as needed -->
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="attendee">Attendee Name:</label>
+          <input type="text" id="attendee" name="attendee" required>
+        </div>
+        <div class="button-group">
+          <button type="submit">Submit</button>
+          <button type="button" onclick="cancelForm()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>
